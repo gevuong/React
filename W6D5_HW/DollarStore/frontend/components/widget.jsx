@@ -1,6 +1,9 @@
 import React from 'react';
 import Currency from './currency';
-import selectCurrency from '../actions';
+import { selectCurrency } from '../actions';
+import reducer from '../reducer';
+// window.selectCurrency = selectCurrency;
+// window.reducer = reducer;
 
 class Widget extends React.Component {
 
@@ -38,7 +41,7 @@ class Widget extends React.Component {
     const { rates, baseCurrency } = this.props.store.getState();
 
     const currencyOptions = this.currencies.map( (currency) => (
-        <div onClick={ () => { this.fetchRates(currency) }}
+        <div onClick={ () => { this.fetchRates(currency); }}
              key={currency}
              className="currency-option">
           {currency}
@@ -69,7 +72,7 @@ class Widget extends React.Component {
       </div>
     );
   }
-};
+}
 
 
 export default Widget;

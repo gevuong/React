@@ -10,6 +10,23 @@
   display: inline-block;
 }
 
+.currency-option:hover {
+  cursor: pointer;
+  height: 30px;
+  width: 50px;
+  background-color: yellow;
+  border: 1px solid white;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.currency-option:active {
+  -webkit-transform: rotate(10px);
+  -ms-transform: rotate(10px);
+  transform: rotate(10px);
+}
+
 .currency-option {
   float: right;
   padding-left: 5px;

@@ -6,3 +6,4 @@ import store from './store';
 document.addEventListener("DOMContentLoaded", function(){
   ReactDOM.render(<Widget store={store} />, document.getElementById('root'));
 });
+// entry file requires store and passes it as a prop to the Widget component.
