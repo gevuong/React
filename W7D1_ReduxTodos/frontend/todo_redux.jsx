@@ -1,6 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import configureStore from '../store/store.js';
+import {allTodos} from '../reducers/selectors.js';
 
+let store = configureStore();
+window.store = store;
+
+window.allTodos = allTodos(store.getState());
 
 
 class Todo extends React.Component {
