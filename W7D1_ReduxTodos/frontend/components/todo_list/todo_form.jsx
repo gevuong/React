@@ -15,7 +15,7 @@ class TodoForm extends React.Component {
   }
 
   handleSubmit(event) {
-    event.preventDefault();
+    event.preventDefault(); // don't want to make a GET request 
     const newTodo = this.state;
     newTodo.id = uniqueId();
     this.props.receiveTodo(newTodo);

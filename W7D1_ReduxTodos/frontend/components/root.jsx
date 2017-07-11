@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import App from './app';
 
 const Root = ({ store }) => (
-  <Provider store={ store }>
+  <Provider store={ store }> // provider is a component as well
     <App />
   </Provider>
 );
