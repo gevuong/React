@@ -1,4 +1,5 @@
 import React from 'react';
+import TodoForm from './todo_form';
 
 const TodoList = ({todos, receiveTodo}) => (
   <div>
@@ -8,6 +9,7 @@ const TodoList = ({todos, receiveTodo}) => (
           {todo.title}
         </li>
       )}
+      <TodoForm receiveTodo={receiveTodo} />
     </ul>
   </div>
 );
