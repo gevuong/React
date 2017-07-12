@@ -1,1 +1,1 @@
-json.extract! @gift, :title, :description;
+json.partial! @gift, partial: 'gift', as: :gift
