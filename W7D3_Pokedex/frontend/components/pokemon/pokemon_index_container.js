@@ -11,4 +11,5 @@ const mapDispatchToProps = dispatch => ({
   requestAllPokemon: () => dispatch(requestAllPokemon())
 });
 
+// QUESTION: ANSWERED: the return value of this a react component (which is a component)
 export default connect(mapStateToProps, mapDispatchToProps)(PokemonIndex);
