@@ -10,9 +10,10 @@ const pokemonReducer = (state = initialState, action) => {
   switch(action.type) {
     case RECEIVE_ALL_POKEMON:
       nextState = merge({}, state);
-      nextState.entities = state.pokemon;
+      nextState.entities = action.pokemon;
       return nextState;
-    case RECEIVE_POKEMON:
+    // case RECEIVE_POKEMON:
+    //   nextState = merge({});
       // add to entities
       // change out currentPoke to be pokeid and reutrn state
     default:

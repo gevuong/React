@@ -1,5 +1,5 @@
 export const selectAllPokemon = state => {
-  return Object.keys(state.pokemon).map(poke_id => state.pokemon[poke_id]);
+  return Object.keys(state.pokemon.entities).map(poke_id => state.pokemon.entities[poke_id]);
 
 };
 
